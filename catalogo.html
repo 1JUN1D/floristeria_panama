@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Flores - Sophia Bouquet | Florería en Panamá</title>
+    <meta name="description"
+        content="Catálogo completo de Sophia Bouquet en Panamá. Rosas, gerberas, girasoles, arreglos florales y más con entrega a domicilio.">
+    <link rel="shortcut icon" href="assets/logo.webp" type="image/x-icon">
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2KFHCYV3WE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-2KFHCYV3WE');
+    </script>
+
+    <!-- FUNCIÓN DE TRACKING WHATSAPP -->
+    <script>
+        function trackWhatsAppLead(whatsappUrl, eventLabel) {
+            try {
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'generate_lead', {
+                        'event_category': 'WhatsApp',
+                        'event_label': eventLabel
+                    });
+                }
+                setTimeout(function() {
+                    window.open(whatsappUrl, '_blank');
+                }, 300);
+            } catch (error) {
+                console.error('Error en tracking:', error);
+                window.open(whatsappUrl, '_blank');
+            }
+            return false;
+        }
+    </script>
+    <link rel="stylesheet" href="catalogo.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Sophia Bouquet Logo">
+            </div>
+            <h1>Nuestro Catálogo</h1>
+            <p>Flores frescas y arreglos únicos para cada ocasión especial en Panamá</p>
+            <div class="decorative-line"></div>
+        </div>
+    </header>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">Todos</button>
+                <button class="filter-btn" data-category="rosas">Rosas</button>
+                <button class="filter-btn" data-category="gerberas">Gerberas</button>
+                <button class="filter-btn" data-category="girasoles">Girasoles</button>
+                <button class="filter-btn" data-category="bouquets">Bouquets</button>
+                <button class="filter-btn" data-category="cajas">En Caja</button>
+                <button class="filter-btn" data-category="mixtas">Flores Mixtas</button>
+                <button class="filter-btn" data-category="premium">Premium</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="catalog">
+        <div class="container">
+            <div class="products-grid">
+
+                <!-- ARREGLOS PERSONALIZADOS SPECIAL CARD -->
+                <div class="product-card special-card" data-category="especiales">
+                    <div class="category-badge">Personalización</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo15.webp')">
+                        <img src="assets/ramo15.webp" alt="Arreglos Personalizados" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Arreglos Personalizados</h2>
+                        <p class="product-description">¿No encontraste lo que buscabas? Tenemos muchos más arreglos disponibles y trabajamos diseños completamente personalizados según tus necesidades y gustos. Contáctanos y crearemos el arreglo perfecto para tu ocasión especial.</p>
+                        <div class="product-price">A Consultar</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20gustar%C3%ADa%20consultar%20sobre%20arreglos%20personalizados.%20%C2%BFPodr%C3%ADan%20ayudarme%3F', 'arreglos_personalizados')">
+                            Consultar Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 47 -->
+                <div class="product-card" data-category="gerberas">
+                    <div class="category-badge">Gerberas</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo47.webp')">
+                        <img src="assets/ramo47.webp" alt="Precision Rosa" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Precision Rosa</h2>
+                        <p class="product-description">Una gerbera rosada con baby breath y eucalipto en papel suave. Pequeño pero significativo. Para esos gestos espontáneos que marcan la diferencia.</p>
+                        <div class="product-price">$27.50</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20precision_rosa%20por%20$27.50.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'precision_rosa_47')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 49 -->
+                <div class="product-card" data-category="bouquets">
+                    <div class="category-badge">Bouquet</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo49.webp')">
+                        <img src="assets/ramo49.webp" alt="Escudo Suave" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Escudo Suave</h2>
+                        <p class="product-description">Claveles rosados con flores manzanilla y follaje en papel blanco translúcido. Sutil y delicado. Para cuando un gesto pequeño dice todo lo que necesitas.</p>
+                        <div class="product-price">$32.50</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20escudo_suave%20por%20$32.50.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'escudo_suave_49')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 50 -->
+                <div class="product-card" data-category="bouquets">
+                    <div class="category-badge">Bouquet</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo50.webp')">
+                        <img src="assets/ramo50.webp" alt="Fuego Clásico" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Fuego Clásico</h2>
+                        <p class="product-description">Claveles rojos con eucalipto en papel blanco minimalista y lazo rojo. Clásico y directo. Amor, admiración y pasión sin rodeos.</p>
+                        <div class="product-price">$35.00</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20fuego_clásico%20por%20$35.00.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'fuego_clásico_50')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 48 -->
+                <div class="product-card" data-category="gerberas">
+                    <div class="category-badge">Gerberas</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo48.webp')">
+                        <img src="assets/ramo48.webp" alt="Operación Blush" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Operación Blush</h2>
+                        <p class="product-description">Gerberas rosadas suaves con flores silvestres en papel pastel con lazo. Natural y elegante. Un detalle que habla de buen gusto y cariño sincero.</p>
+                        <div class="product-price">$37.50</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20operación_blush%20por%20$37.50.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'operación_blush_48')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 43 -->
+                <div class="product-card" data-category="rosas">
+                    <div class="category-badge">Rosas</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo43.webp')">
+                        <img src="assets/ramo43.webp" alt="Esencia Clásica" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Esencia Clásica</h2>
+                        <p class="product-description">6 rosas amarillas con baby breath y follaje en papel blanco con lazo de yute. Rústico y moderno. Un gesto auténtico que vale más que cualquier mensaje.</p>
+                        <div class="product-price">$40.00</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20esencia_clásica%20por%20$40.00.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'esencia_clásica_43')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 54 -->
+                <div class="product-card" data-category="mixtas">
+                    <div class="category-badge">Flores Mixtas</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo54.webp')">
+                        <img src="assets/ramo54.webp" alt="Destello Blanco" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Destello Blanco</h2>
+                        <p class="product-description">Gypsophila blanca con margaritas amarillas en envoltura blanca. Fresco, natural y lleno de luz. Un ramo que alegra sin necesidad de ser grande.</p>
+                        <div class="product-price">$41.25</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20destello_blanco%20por%20$41.25.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'destello_blanco_54')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 52 -->
+                <div class="product-card" data-category="rosas">
+                    <div class="category-badge">Rosas</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo52.webp')">
+                        <img src="assets/ramo52.webp" alt="Código Lavanda" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Código Lavanda</h2>
+                        <p class="product-description">Rosas lavanda con gypsophila rosada en envoltura suave con lazo. Diferente, romántico y moderno. Para quien busca sorprender con algo que no es lo típico.</p>
+                        <div class="product-price">$42.50</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20código_lavanda%20por%20$42.50.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'código_lavanda_52')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 51 -->
+                <div class="product-card" data-category="rosas">
+                    <div class="category-badge">Rosas</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo51.webp')">
+                        <img src="assets/ramo51.webp" alt="Elegancia Letal" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Elegancia Letal</h2>
+                        <p class="product-description">Rosas rojas premium con eucalipto en envoltura blanca con lazo negro. Contraste moderno que impacta. Sofisticación y pasión en un solo gesto.</p>
+                        <div class="product-price">$43.75</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20elegancia_letal%20por%20$43.75.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'elegancia_letal_51')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 53 -->
+                <div class="product-card" data-category="rosas">
+                    <div class="category-badge">Rosas</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo53.webp')">
+                        <img src="assets/ramo53.webp" alt="Blindaje Azul" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Blindaje Azul</h2>
+                        <p class="product-description">Rosas blancas con gypsophila azul en envoltura blanca con lazos celestes. Paz y pureza que se siente. Perfecto para nacimientos, agradecimientos o momentos especiales.</p>
+                        <div class="product-price">$45.00</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20blindaje_azul%20por%20$45.00.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'blindaje_azul_53')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 41 -->
+                <div class="product-card" data-category="rosas">
+                    <div class="category-badge">Rosas</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo41.webp')">
+                        <img src="assets/ramo41.webp" alt="Código Amarillo" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Código Amarillo</h2>
+                        <p class="product-description">7 rosas amarillas con baby breath y eucalipto en papel crema con lazo. Sencillo pero poderoso. Para decir te aprecio con un gesto lleno de luz.</p>
+                        <div class="product-price">$47.50</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20código_amarillo%20por%20$47.50.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'código_amarillo_41')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 44 -->
+                <div class="product-card" data-category="rosas">
+                    <div class="category-badge">Rosas</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo44.webp')">
+                        <img src="assets/ramo44.webp" alt="Revolución de Color" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Revolución de Color</h2>
+                        <p class="product-description">6 rosas multicolor arcoíris con baby breath en papel elegante con lazo. Único y llamativo. El regalo que dice: tú no eres como las demás.</p>
+                        <div class="product-price">$47.50</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20revolución_de_color%20por%20$47.50.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'revolución_de_color_44')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 55 -->
+                <div class="product-card" data-category="bouquets">
+                    <div class="category-badge">Bouquet</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo55.webp')">
+                        <img src="assets/ramo55.webp" alt="Fortaleza Azul" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Fortaleza Azul</h2>
+                        <p class="product-description">Hortensia azul en papel translúcido con lazo satinado. Minimalista y elegante. Una sola flor que dice todo con su presencia.</p>
+                        <div class="product-price">$47.50</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20fortaleza_azul%20por%20$47.50.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'fortaleza_azul_55')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 56 -->
+                <div class="product-card" data-category="bouquets">
+                    <div class="category-badge">Bouquet</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo56.webp')">
+                        <img src="assets/ramo56.webp" alt="Conquista Romántica" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Conquista Romántica</h2>
+                        <p class="product-description">Lily rosada con rosas blush y gypsophila en papel rosado con lazo. Femenino y romántico. El bouquet que hace suspirar.</p>
+                        <div class="product-price">$52.50</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20conquista_romántica%20por%20$52.50.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'conquista_romántica_56')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 39 -->
+                <div class="product-card" data-category="girasoles">
+                    <div class="category-badge">Girasoles</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo39.webp')">
+                        <img src="assets/ramo39.webp" alt="Artillería Solar" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Artillería Solar</h2>
+                        <p class="product-description">3 girasoles y 2 gerberas amarillo-naranja con baby breath en papel crema y rosado. Optimismo que se contagia. El regalo que levanta el ánimo al instante.</p>
+                        <div class="product-price">$56.25</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20artillería_solar%20por%20$56.25.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'artillería_solar_39')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 46 -->
+                <div class="product-card" data-category="girasoles">
+                    <div class="category-badge">Girasoles</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo46.webp')">
+                        <img src="assets/ramo46.webp" alt="Fusión Radiante" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Fusión Radiante</h2>
+                        <p class="product-description">Girasol central con rosas rosadas, baby breath y eucalipto en papel suave con lazo. Calidez y ternura juntas. Como recibir un rayo de sol con un abrazo.</p>
+                        <div class="product-price">$56.25</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20fusión_radiante%20por%20$56.25.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'fusión_radiante_46')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 38 -->
+                <div class="product-card" data-category="gerberas">
+                    <div class="category-badge">Gerberas</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo38.webp')">
+                        <img src="assets/ramo38.webp" alt="Carga Dorada" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Carga Dorada</h2>
+                        <p class="product-description">8 gerberas amarillas y blancas con flores de relleno en papel crema con lazo. Alegría concentrada en un ramo. Luz y energía positiva para regalar.</p>
+                        <div class="product-price">$60.00</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20carga_dorada%20por%20$60.00.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'carga_dorada_38')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 40 -->
+                <div class="product-card" data-category="rosas">
+                    <div class="category-badge">Rosas</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo40.webp')">
+                        <img src="assets/ramo40.webp" alt="Reinado Dorado" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Reinado Dorado</h2>
+                        <p class="product-description">12 rosas amarillas con flores de relleno y follaje en papel crema y amarillo. Amistad, alegría y los mejores deseos en un ramo vibrante que ilumina.</p>
+                        <div class="product-price">$65.00</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20reinado_dorado%20por%20$65.00.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'reinado_dorado_40')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 42 -->
+                <div class="product-card" data-category="girasoles">
+                    <div class="category-badge">Mixto Amarillo</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo42.webp')">
+                        <img src="assets/ramo42.webp" alt="Triunfo Dorado" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Triunfo Dorado</h2>
+                        <p class="product-description">Tulipanes amarillos con margaritas y gerberas amarillas en papel crema con lazo amarillo. Felicidad pura. Ideal para graduaciones, logros o celebrar la vida.</p>
+                        <div class="product-price">$65.00</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20triunfo_dorado%20por%20$65.00.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'triunfo_dorado_42')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 37 -->
+                <div class="product-card" data-category="rosas">
+                    <div class="category-badge">Rosas</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo37.webp')">
+                        <img src="assets/ramo37.webp" alt="Alianza Perfecta" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Alianza Perfecta</h2>
+                        <p class="product-description">12 rosas rojas y rosadas con baby breath y follaje en papel floral crema y rosa con lazo. El equilibrio perfecto entre pasión y ternura. Para momentos que importan.</p>
+                        <div class="product-price">$68.75</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20alianza_perfecta%20por%20$68.75.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'alianza_perfecta_37')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 45 -->
+                <div class="product-card" data-category="bouquets">
+                    <div class="category-badge">Bouquet</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo45.webp')">
+                        <img src="assets/ramo45.webp" alt="Protección Dulce" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Protección Dulce</h2>
+                        <p class="product-description">Claveles rosados con rosas spray y baby breath en papel rosado con lazo. Ternura y elegancia sin complicaciones. Un detalle dulce que llega al corazón.</p>
+                        <div class="product-price">$70.00</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20protección_dulce%20por%20$70.00.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'protección_dulce_45')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 57 -->
+                <div class="product-card" data-category="bouquets">
+                    <div class="category-badge">Bouquet</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo57.webp')">
+                        <img src="assets/ramo57.webp" alt="Potencia Lily" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Potencia Lily</h2>
+                        <p class="product-description">Lilies rosadas premium en plena floración con follaje abundante. Impactante y generoso. Para cuando quieres que el regalo hable fuerte y claro.</p>
+                        <div class="product-price">$75.00</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20potencia_lily%20por%20$75.00.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'potencia_lily_57')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 29 -->
+                <div class="product-card" data-category="gerberas">
+                    <div class="category-badge">Gerberas</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo29.webp')">
+                        <img src="assets/ramo29.webp" alt="Susurro Táctico" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Susurro Táctico</h2>
+                        <p class="product-description">Gerberas rosadas y lisianthus pastel en papel beige con lazo. Minimalista y tierno. Para decir te quiero sin exagerar, pero sin dejar dudas.</p>
+                        <div class="product-price">$81.25</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20susurro_táctico%20por%20$81.25.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'susurro_táctico_29')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 31 -->
+                <div class="product-card" data-category="gerberas">
+                    <div class="category-badge">Gerberas</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo31.webp')">
+                        <img src="assets/ramo31.webp" alt="Misión Delicada" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Misión Delicada</h2>
+                        <p class="product-description">Gerberas rosadas con flores de relleno en papel rosa pastel. Minimalista y dulce. Un regalo que dice mucho con poco.</p>
+                        <div class="product-price">$81.25</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20misión_delicada%20por%20$81.25.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'misión_delicada_31')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 35 -->
+                <div class="product-card" data-category="bouquets">
+                    <div class="category-badge">Bouquet</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo35.webp')">
+                        <img src="assets/ramo35.webp" alt="Escudo de Primavera" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Escudo de Primavera</h2>
+                        <p class="product-description">Rosas rosadas, hortensia verde, lisianthus blanco y manzanilla en papel crema con lazo. Como recibir un pedazo de primavera. Paz, ternura y armonía en tus manos.</p>
+                        <div class="product-price">$81.25</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20escudo_de_primavera%20por%20$81.25.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'escudo_de_primavera_35')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 27 -->
+                <div class="product-card" data-category="gerberas">
+                    <div class="category-badge">Gerberas</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo27.webp')">
+                        <img src="assets/ramo27.webp" alt="Golpe Directo" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Golpe Directo</h2>
+                        <p class="product-description">Gerberas rojas intensas con eucalipto en papel kraft y lazo rojo. Sin vueltas. Para cuando quieres que el rojo hable por ti.</p>
+                        <div class="product-price">$87.50</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20golpe_directo%20por%20$87.50.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'golpe_directo_27')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 30 -->
+                <div class="product-card" data-category="gerberas">
+                    <div class="category-badge">Gerberas</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo30.webp')">
+                        <img src="assets/ramo30.webp" alt="Fuerza Rosa" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Fuerza Rosa</h2>
+                        <p class="product-description">Gerberas rosadas y fucsia con flores de relleno en papel blanco con lazo. Fresco y alegre. El detalle perfecto para expresar cariño con estilo.</p>
+                        <div class="product-price">$87.50</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20fuerza_rosa%20por%20$87.50.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'fuerza_rosa_30')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 32 -->
+                <div class="product-card" data-category="gerberas">
+                    <div class="category-badge">Gerberas</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo32.webp')">
+                        <img src="assets/ramo32.webp" alt="Encanto Magnético" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Encanto Magnético</h2>
+                        <p class="product-description">Gerberas rosadas con margaritas blancas en papel rosa con cinta. Alegre, femenino y muy fotogénico. El bouquet que pide que le tomen foto.</p>
+                        <div class="product-price">$87.50</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20encanto_magnético%20por%20$87.50.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'encanto_magnético_32')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 34 -->
+                <div class="product-card" data-category="rosas">
+                    <div class="category-badge">Rosas</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo34.webp')">
+                        <img src="assets/ramo34.webp" alt="Amanecer Dorado" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Amanecer Dorado</h2>
+                        <p class="product-description">Rosas durazno y crema con gypsophila en envoltura translúcida con lazo naranja. Calidez que se siente. Para nuevos comienzos y buenos deseos.</p>
+                        <div class="product-price">$87.50</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20amanecer_dorado%20por%20$87.50.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'amanecer_dorado_34')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 36 -->
+                <div class="product-card" data-category="bouquets">
+                    <div class="category-badge">Bouquet</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo36.webp')">
+                        <img src="assets/ramo36.webp" alt="Poder Coreano" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Poder Coreano</h2>
+                        <p class="product-description">Hortensia rosada, lisianthus y rosas rosadas en envoltura azul pastel y rosa. Estilo coreano que conquista. Delicadeza y dulzura en cada detalle.</p>
+                        <div class="product-price">$87.50</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20poder_coreano%20por%20$87.50.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'poder_coreano_36')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 33 -->
+                <div class="product-card" data-category="rosas">
+                    <div class="category-badge">Rosas</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo33.webp')">
+                        <img src="assets/ramo33.webp" alt="Pacto Eterno" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Pacto Eterno</h2>
+                        <p class="product-description">Rosas rosadas frescas con gypsophila en papel rosa pastel. Clásico romántico que nunca pasa de moda. Gratitud, amor y admiración en un solo ramo.</p>
+                        <div class="product-price">$93.75</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20pacto_eterno%20por%20$93.75.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'pacto_eterno_33')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 26 -->
+                <div class="product-card" data-category="gerberas">
+                    <div class="category-badge">Gerberas</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo26.webp')">
+                        <img src="assets/ramo26.webp" alt="Territorio Fresco" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Territorio Fresco</h2>
+                        <p class="product-description">Gerberas crema y rosado, rosas, tulipanes en papel color menta con lazo. Frescura que entra por los ojos. Natural, moderno y lleno de vida.</p>
+                        <div class="product-price">$100.00</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20territorio_fresco%20por%20$100.00.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'territorio_fresco_26')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 23 -->
+                <div class="product-card" data-category="bouquets">
+                    <div class="category-badge">Bouquet</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo23.webp')">
+                        <img src="assets/ramo23.webp" alt="Código Elegante" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Código Elegante</h2>
+                        <p class="product-description">Rosas blancas y rosadas, tulipanes y eucalipto en papel translúcido con lazo satinado. Estilo minimalista coreano que enamora. Diferente, delicado, inolvidable.</p>
+                        <div class="product-price">$106.25</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20código_elegante%20por%20$106.25.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'código_elegante_23')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 28 -->
+                <div class="product-card" data-category="gerberas">
+                    <div class="category-badge">Gerberas</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo28.webp')">
+                        <img src="assets/ramo28.webp" alt="Dominio Coral" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Dominio Coral</h2>
+                        <p class="product-description">Gerberas rosadas, lirios, flores coral y fucsia en papel durazno. Vibrante como un atardecer tropical. El regalo que nadie puede ignorar.</p>
+                        <div class="product-price">$106.25</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20dominio_coral%20por%20$106.25.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'dominio_coral_28')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 24 -->
+                <div class="product-card" data-category="bouquets">
+                    <div class="category-badge">Bouquet</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo24.webp')">
+                        <img src="assets/ramo24.webp" alt="Rendición Total" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Rendición Total</h2>
+                        <p class="product-description">Rosas rosadas y lisianthus en papel rosa pastel con lazo. Romanticismo suave con un toque moderno. El bouquet que toda mujer sueña recibir.</p>
+                        <div class="product-price">$112.50</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20rendición_total%20por%20$112.50.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'rendición_total_24')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 4 -->
+                <div class="product-card" data-category="cajas">
+                    <div class="category-badge">Caja Floral</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo4.webp')">
+                        <img src="assets/ramo4.webp" alt="Refugio Secreto" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Refugio Secreto</h2>
+                        <p class="product-description">Flores rosadas y crema en caja floral. Suavidad que desarma. Un detalle que ilumina el espacio y alegra el corazón sin necesidad de una razón especial.</p>
+                        <div class="product-price">$118.75</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20refugio_secreto%20por%20$118.75.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'refugio_secreto_4')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 6 -->
+                <div class="product-card" data-category="cajas">
+                    <div class="category-badge">Caja Floral</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo6.webp')">
+                        <img src="assets/ramo6.webp" alt="Despertar de Energía" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Despertar de Energía</h2>
+                        <p class="product-description">Margaritas blancas, flores azules y rosas amarillas en caja amarilla. Lo abres y sientes que el día empieza de nuevo. Para sacarle una sonrisa a quien más quieres.</p>
+                        <div class="product-price">$118.75</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20despertar_de_energía%20por%20$118.75.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'despertar_de_energía_6')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 8 -->
+                <div class="product-card" data-category="bouquets">
+                    <div class="category-badge">Bouquet</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo8.webp')">
+                        <img src="assets/ramo8.webp" alt="Dominio Suave" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Dominio Suave</h2>
+                        <p class="product-description">Rosas rosadas con detalles blancos en bouquet. Delicado como un abrazo. Un detalle que dice más que mil mensajes de texto.</p>
+                        <div class="product-price">$118.75</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20dominio_suave%20por%20$118.75.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'dominio_suave_8')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 20 -->
+                <div class="product-card" data-category="rosas">
+                    <div class="category-badge">Jarrón</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo20.webp')">
+                        <img src="assets/ramo20.webp" alt="Legado Carmesí" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Legado Carmesí</h2>
+                        <p class="product-description">Rosas rojas, flores blancas y eucalipto en jarrón de cristal. Clásico que nunca falla. Romance con un toque de frescura que conquista desde el primer vistazo.</p>
+                        <div class="product-price">$118.75</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20legado_carmesí%20por%20$118.75.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'legado_carmesí_20')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 25 -->
+                <div class="product-card" data-category="gerberas">
+                    <div class="category-badge">Gerberas</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo25.webp')">
+                        <img src="assets/ramo25.webp" alt="Explosión Viva" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Explosión Viva</h2>
+                        <p class="product-description">Gerberas rosadas y blancas con mariposas decorativas en papel rosa vibrante. Alegría que se ve y se siente. Un regalo que arranca sonrisas al instante.</p>
+                        <div class="product-price">$118.75</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20explosión_viva%20por%20$118.75.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'explosión_viva_25')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 7 -->
+                <div class="product-card" data-category="mixtas">
+                    <div class="category-badge">Cesta</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo7.webp')">
+                        <img src="assets/ramo7.webp" alt="Territorio Encantado" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Territorio Encantado</h2>
+                        <p class="product-description">Rosas rosadas, blancas y azules en cesta con lazo. Parece salido de un sueño. Un regalo lleno de ternura que nadie espera y nadie olvida.</p>
+                        <div class="product-price">$122.50</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20territorio_encantado%20por%20$122.50.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'territorio_encantado_7')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 9 -->
+                <div class="product-card" data-category="mixtas">
+                    <div class="category-badge">Jarrón</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo9.webp')">
+                        <img src="assets/ramo9.webp" alt="Fortaleza Pastel" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Fortaleza Pastel</h2>
+                        <p class="product-description">Hortensias pastel rosado, azul y blanco en jarrón de cristal. Frescura y elegancia en una sola pieza. Transforma cualquier espacio en un rincón de calma.</p>
+                        <div class="product-price">$122.50</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20fortaleza_pastel%20por%20$122.50.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'fortaleza_pastel_9')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 11 -->
+                <div class="product-card" data-category="bouquets">
+                    <div class="category-badge">Bouquet</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo11.webp')">
+                        <img src="assets/ramo11.webp" alt="Comando Sereno" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Comando Sereno</h2>
+                        <p class="product-description">Lirios blancos con flores azules en bouquet. Transmite paz y frescura como un atardecer frente al mar. Para alguien que merece un respiro.</p>
+                        <div class="product-price">$137.50</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20comando_sereno%20por%20$137.50.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'comando_sereno_11')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 22 -->
+                <div class="product-card" data-category="bouquets">
+                    <div class="category-badge">Bouquet</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo22.webp')">
+                        <img src="assets/ramo22.webp" alt="Vitamina Solar" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Vitamina Solar</h2>
+                        <p class="product-description">Rosas naranja y coral con eucalipto en bouquet. Optimismo en cada pétalo. Para alegrar, felicitar o simplemente recordarle a alguien que brilla.</p>
+                        <div class="product-price">$137.50</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20vitamina_solar%20por%20$137.50.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'vitamina_solar_22')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 13 -->
+                <div class="product-card" data-category="mixtas">
+                    <div class="category-badge">Con Globos</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo13.webp')">
+                        <img src="assets/ramo13.webp" alt="Estrategia Dulce" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Estrategia Dulce</h2>
+                        <p class="product-description">Rosas rosadas y blancas con globos transparentes. Moderno, festivo y romántico. El regalo que convierte cualquier día en una celebración.</p>
+                        <div class="product-price">$150.00</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20estrategia_dulce%20por%20$150.00.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'estrategia_dulce_13')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 10 -->
+                <div class="product-card" data-category="mixtas">
+                    <div class="category-badge">Flores Mixtas</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo10.webp')">
+                        <img src="assets/ramo10.webp" alt="Impacto Sutil" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Impacto Sutil</h2>
+                        <p class="product-description">Cientos de mini flores en tonos pastel. Ligero, mágico, diferente a todo. El regalo que hace que digan: ¿de dónde sacaste algo tan hermoso?</p>
+                        <div class="product-price">$156.25</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20impacto_sutil%20por%20$156.25.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'impacto_sutil_10')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 2 -->
+                <div class="product-card" data-category="cajas">
+                    <div class="category-badge">Caja Corazón</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo2.webp')">
+                        <img src="assets/ramo2.webp" alt="Garantía de Amor" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Garantía de Amor</h2>
+                        <p class="product-description">Rosas rojas en caja corazón compacta. Ese detalle que transforma un día normal en un recuerdo que no se borra. Para cuando necesitas que sepa que va en serio.</p>
+                        <div class="product-price">$160.00</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20garantía_de_amor%20por%20$160.00.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'garantía_de_amor_2')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 12 -->
+                <div class="product-card" data-category="premium">
+                    <div class="category-badge">Corazón</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo12.webp')">
+                        <img src="assets/ramo12.webp" alt="Precision del Corazón" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Precision del Corazón</h2>
+                        <p class="product-description">Flores blancas y rosas rosadas en forma de corazón. Ternura hecha arreglo. Un detalle que habla directo al corazón sin rodeos.</p>
+                        <div class="product-price">$187.50</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20precision_del_corazón%20por%20$187.50.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'precision_del_corazón_12')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 18 -->
+                <div class="product-card" data-category="mixtas">
+                    <div class="category-badge">Jarrón</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo18.webp')">
+                        <img src="assets/ramo18.webp" alt="Blindaje Emocional" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Blindaje Emocional</h2>
+                        <p class="product-description">Calas rosadas y blancas con rosas en jarrón de cristal. Gracia natural que llena cualquier ambiente de calma. Para quien valora lo fino y lo delicado.</p>
+                        <div class="product-price">$187.50</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20blindaje_emocional%20por%20$187.50.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'blindaje_emocional_18')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 21 -->
+                <div class="product-card" data-category="cajas">
+                    <div class="category-badge">Caja Floral</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo21.webp')">
+                        <img src="assets/ramo21.webp" alt="Incendio Interior" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Incendio Interior</h2>
+                        <p class="product-description">Rosas rojas, naranjas y rosadas en caja floral. Intensidad y color para alguien que te mueve por dentro. El detalle que dice: me haces sentir vivo.</p>
+                        <div class="product-price">$187.50</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20incendio_interior%20por%20$187.50.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'incendio_interior_21')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 5 -->
+                <div class="product-card" data-category="premium">
+                    <div class="category-badge">Premium</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo5.webp')">
+                        <img src="assets/ramo5.webp" alt="Victoria Completa" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Victoria Completa</h2>
+                        <p class="product-description">Rosas rojas con globo personalizado. 33" de alto x 18" de ancho. El regalo que llega y roba todas las miradas. Para celebrar logros o decir: estoy orgulloso de ti.</p>
+                        <div class="product-price">$225.00</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20victoria_completa%20por%20$225.00.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'victoria_completa_5')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 3 -->
+                <div class="product-card" data-category="cajas">
+                    <div class="category-badge">Caja Elegante</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo3.webp')">
+                        <img src="assets/ramo3.webp" alt="Conquista Roja" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Conquista Roja</h2>
+                        <p class="product-description">Rosas rojas en caja elegante. La forma más poderosa de sorprender a alguien que lo merece todo. Para ese momento donde las palabras no alcanzan.</p>
+                        <div class="product-price">$235.00</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20conquista_roja%20por%20$235.00.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'conquista_roja_3')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 19 -->
+                <div class="product-card" data-category="rosas">
+                    <div class="category-badge">Rosas</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo19.webp')">
+                        <img src="assets/ramo19.webp" alt="Detonador Dorado" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Detonador Dorado</h2>
+                        <p class="product-description">Rosas rojas, naranjas y doradas con detalles verdes. Energía cálida que ilumina. Como regalar un atardecer en flores.</p>
+                        <div class="product-price">$235.00</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20detonador_dorado%20por%20$235.00.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'detonador_dorado_19')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 15 -->
+                <div class="product-card" data-category="cajas">
+                    <div class="category-badge">Caja Premium</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo15.webp')">
+                        <img src="assets/ramo15.webp" alt="Arquitectura Floral" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Arquitectura Floral</h2>
+                        <p class="product-description">Rosas rosadas, crema y blancas con detalles verdes en caja rosa. Un pedacito de jardín que llega a sus manos. Sofisticado, dulce y memorable.</p>
+                        <div class="product-price">$250.00</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20arquitectura_floral%20por%20$250.00.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'arquitectura_floral_15')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 17 -->
+                <div class="product-card" data-category="cajas">
+                    <div class="category-badge">Caja Floral</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo17.webp')">
+                        <img src="assets/ramo17.webp" alt="Conquista Real" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Conquista Real</h2>
+                        <p class="product-description">Rosas rojas con orquídeas blancas en caja floral. Romance y distinción en una sola entrega. Un regalo que dice: esto es de verdad.</p>
+                        <div class="product-price">$275.00</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20conquista_real%20por%20$275.00.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'conquista_real_17')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 16 -->
+                <div class="product-card" data-category="cajas">
+                    <div class="category-badge">Caja Floral</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo16.webp')">
+                        <img src="assets/ramo16.webp" alt="Arsenal de Pasión" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Arsenal de Pasión</h2>
+                        <p class="product-description">Rosas en tonos rojos y rosa, abundante y llamativo en caja floral. Impacto visual que deja sin palabras. Para cuando quieres que el regalo grite lo que sientes.</p>
+                        <div class="product-price">$312.50</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20arsenal_de_pasión%20por%20$312.50.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'arsenal_de_pasión_16')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 1 -->
+                <div class="product-card" data-category="cajas">
+                    <div class="category-badge">Caja Corazón</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo1.webp')">
+                        <img src="assets/ramo1.webp" alt="Latido de Poder" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Latido de Poder</h2>
+                        <p class="product-description">Rosas rojas en caja corazón. No es solo un regalo, es la forma más directa de decir lo que sientes sin abrir la boca. Quien lo recibe, lo entiende al instante.</p>
+                        <div class="product-price">$322.50</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20latido_de_poder%20por%20$322.50.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'latido_de_poder_1')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 14 -->
+                <div class="product-card" data-category="premium">
+                    <div class="category-badge">Premium</div>
+                    <div class="product-image" onclick="openImageModal('assets/ramo14.webp')">
+                        <img src="assets/ramo14.webp" alt="Imperio Rosa" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h2 class="product-title">Imperio Rosa</h2>
+                        <p class="product-description">Rosas suaves, orquídeas y flores selectas en caja con lazo. Distinción pura. Para cuando quieres que el detalle hable de tu buen gusto y tu cariño sin límites.</p>
+                        <div class="product-price">$350.00</div>
+                        <button class="product-button"
+                            onclick="trackWhatsAppLead('https://wa.me/50761129013?text=Hola,%20me%20interesa%20imperio_rosa%20por%20$350.00.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F', 'imperio_rosa_14')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para ampliar imágenes -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        var modal = document.getElementById("imageModal");
+        var span = document.getElementsByClassName("close")[0];
+
+        function openImageModal(imageSrc) {
+            modal.style.display = "block";
+            document.getElementById("img01").src = imageSrc;
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // Filter functionality
+        function filterProducts(category) {
+            const cards = document.querySelectorAll('.product-card');
+            cards.forEach(card => {
+                if (category === 'all') {
+                    card.style.display = '';
+                } else {
+                    const cardCategory = card.getAttribute('data-category');
+                    if (cardCategory === category) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+
+            // Update active button
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+
+        // Add click handlers to filter buttons
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                filterProducts(this.getAttribute('data-category'));
+            });
+        });
+    </script>
+</body>
+
+</html>
