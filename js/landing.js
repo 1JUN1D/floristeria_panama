@@ -142,7 +142,19 @@ function renderProducts(filters = [], limit = null) {
 // --- FUNCIONES DE WHATSAPP ---
 function contactWA() {
     const url = 'https://wa.me/50761129013?text=Hola,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20flores.%20%C2%BFPodr%C3%ADan%20ayudarme%3F';
-    window.open(url, '_blank');
+    // Track conversion - Mensaje WhatsApp
+    try {
+        gtag('event', 'conversion', {
+            'send_to': 'AW-17976527804/eNHaCKmS7v4bELyX8PtC',
+            'value': 1.0,
+            'currency': 'COP',
+            'event_callback': function () {
+                window.open(url, '_blank');
+            }
+        });
+    } catch (e) {
+        window.open(url, '_blank');
+    }
 }
 
 function orderWA(productName, price) {
@@ -153,7 +165,7 @@ function orderWA(productName, price) {
     // Track conversion to Google Ads
     try {
         gtag('event', 'conversion', {
-            'send_to': 'AW-17971833009/vV8ZCOKaw_0bELHR0blC',
+            'send_to': 'AW-17976527804/eNHaCKmS7v4bELyX8PtC',
             'value': 1.0,
             'currency': 'COP',
             'event_callback': function () {
