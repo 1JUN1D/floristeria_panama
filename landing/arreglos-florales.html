@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arreglos Florales en Panamá | Floristería Panamá | Bouquet de Flores | Sophia Bouquet</title>
-    <meta name="description" content="Arreglos florales elegantes en Panamá. Ramos de flores, bouquets, flores de regalo y flores frescas. Floristería en Panamá con entrega a domicilio. Sophia Bouquet.">
-    <meta name="keywords" content="arreglo de flores, ramos de flores, floristeria panama, flores panama, bouquet de flores, flores de regalo, arreglos florales elegantes, flores frescas panama">
+    <title>Arreglos Florales en Panamá | Delivery de Arreglos de Flores | Sophia Bouquet</title>
+    <meta name="description" content="Arreglos florales en Panamá con entrega a domicilio. Arreglos de flores frescos, delivery de arreglos florales y arreglos con flores amarillas. Sophia Bouquet Panamá.">
+    <meta name="keywords" content="arreglos florales panama, arreglos de flores a domicilio, arreglos florales delivery, delivery de arreglos florales, arreglos de flores delivery, arreglos florales con flores amarillas, arreglos florales elegantes, arreglos de flores panama">
     <link rel="shortcut icon" href="../assets/logo.webp" type="image/x-icon">
-
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2KFHCYV3WE"></script>
@@ -21,7 +20,6 @@
 
     <link rel="stylesheet" href="css/landing.css">
     <script>
-        // Set landing filter before loading JS
         LANDING_PRIORITY_TAG = 'arreglos';
     </script>
 </head>
@@ -52,12 +50,12 @@
     <section class="landing-hero">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-badge">💐 Floristería Panamá</div>
-                <h1>Arreglos Florales y Ramos<br>de Flores en Panamá</h1>
-                <p class="hero-subtitle">Colecciones cuidadosamente seleccionadas de flores frescas para cada ocasión. Entrega a domicilio en toda Panamá.</p>
+                <div class="hero-badge">💐 Arreglos Florales Panamá</div>
+                <h1>Arreglos Florales Frescos<br>en Panamá</h1>
+                <p class="hero-subtitle">Arreglos florales elegantes con entrega a domicilio en Panamá. Desde arreglos en caja hasta centros de mesa con flores frescas. Delivery el mismo día.</p>
                 <div class="hero-buttons">
-                    <button class="btn-primary" onclick="contactWA()">💐 Ver Catálogo Completo</button>
-                    <button class="btn-secondary" onclick="document.getElementById('catalog').scrollIntoView({behavior: 'smooth'})">Desplazarse</button>
+                    <button class="btn-primary" onclick="contactWA()">💐 Pedir por WhatsApp</button>
+                    <button class="btn-secondary" onclick="document.getElementById('catalog').scrollIntoView({behavior: 'smooth'})">Ver Catálogo</button>
                 </div>
                 <div class="hero-trust">
                     <div class="hero-trust-item">✓ Flores 100% Frescas</div>
@@ -92,20 +90,32 @@
         </div>
     </section>
 
+    <!-- CTA Consulta -->
+    <section class="cta-consulta">
+        <div class="container">
+            <div class="cta-consulta-inner">
+                <h2>¿No encontraste lo que buscas?</h2>
+                <p>Trabajamos arreglos completamente personalizados según tus preferencias. Contáctanos para crear algo especial.</p>
+                <button class="btn-cta-big" onclick="contactWA()">💬 Consultar por WhatsApp</button>
+            </div>
+        </div>
+    </section>
+
     <!-- Catalog Section -->
     <section class="catalog-landing" id="catalog">
         <div class="container">
             <div class="section-title">
-                <h2>Nuestras Flores Frescas</h2>
-                <p>Selecciona entre nuestros arreglos florales más populares en Panamá</p>
+                <h2>Nuestros Arreglos Florales</h2>
+                <p>Arreglos frescos y elegantes con delivery a domicilio en Panamá</p>
                 <div class="title-line"></div>
             </div>
 
             <div class="catalog-filters-landing">
                     <button class="filter-btn-landing active" data-filter="destacados">Destacados</button>
-                    <button class="filter-btn-landing" data-filter="rosas">Rosas</button>
-                    <button class="filter-btn-landing" data-filter="bouquets">Bouquets</button>
-                    <button class="filter-btn-landing" data-filter="gerberas">Gerberas</button>
+                    <button class="filter-btn-landing" data-filter="arreglos">Arreglos</button>
+                    <button class="filter-btn-landing" data-filter="cajas">En Caja</button>
+                    <button class="filter-btn-landing" data-filter="rosas">Con Rosas</button>
+                    <button class="filter-btn-landing" data-filter="mixtas">Mixtos</button>
                     <button class="filter-btn-landing" data-filter="ver todo">Ver Todo</button>
 
             </div>
@@ -178,11 +188,25 @@
         </div>
     </section>
 
+    <!-- Location Map -->
+    <section style="padding:60px 0;background:var(--gray-light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestra Ubicación</h2>
+                <p>Encuéntranos en Ciudad de Panamá</p>
+                <div class="title-line"></div>
+            </div>
+            <div style="margin-top:30px;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7880.162750091884!2d-79.42108460651647!3d9.05634205914628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fab55336ad10cc1%3A0x8ff1cdcade7d21ec!2sFloristeria%20Panama%20-%20Sophia%20Bouquet!5e0!3m2!1ses-419!2sco!4v1774011486502!5m2!1ses-419!2sco" width="100%" height="400" style="border:0;border-radius:16px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Final -->
     <section class="cta-final">
         <div class="container">
-            <h2>Encuentra el arreglo perfecto</h2>
-            <p>Realiza tu pedido ahora y recibe flores frescas en Panamá. Envío a domicilio garantizado.</p>
+            <h2>¿Buscas un arreglo floral personalizado?</h2>
+            <p>Creamos arreglos florales a tu medida con flores frescas. Delivery a domicilio en Panamá.</p>
             <div class="cta-final-buttons">
                 <button class="btn-primary" onclick="contactWA()">💬 Contactar por WhatsApp</button>
                 <button class="btn-secondary" onclick="window.location.href='../catalogo.html'">Ver Catálogo Completo</button>
@@ -200,10 +224,11 @@
                 </div>
                 <div class="footer-col">
                     <h4>Servicios</h4>
-                    <p><a href="#">Entrega a domicilio</a></p>
-                    <p><a href="#">Ramos personalizados</a></p>
-                    <p><a href="#">Arreglos para eventos</a></p>
-                    <p><a href="#">Cajas de rosas</a></p>
+                    <p><a href="#">Arreglos en caja</a></p>
+                    <p><a href="#">Centros de mesa</a></p>
+                    <p><a href="#">Arreglos personalizados</a></p>
+                    <p><a href="#">Delivery de arreglos</a></p>
+
                 </div>
                 <div class="footer-col">
                     <h4>Contacto</h4>
@@ -239,7 +264,6 @@
     <!-- Scripts -->
     <script src="../js/landing.js"></script>
     <script>
-        // Inicializar la landing
         LANDING_PRIORITY_TAG = 'arreglos';
         renderProductsLanding();
 
@@ -247,7 +271,6 @@
             const container = document.getElementById('products-grid');
             let productsToDisplay = products;
 
-            // Ordenar por prioridad
             if (LANDING_PRIORITY_TAG) {
                 productsToDisplay = getSortedProducts(LANDING_PRIORITY_TAG);
             }
@@ -287,12 +310,10 @@
             document.getElementById('lightbox').classList.remove('active');
         }
 
-        // Filter buttons
         document.querySelectorAll('.filter-btn-landing').forEach(btn => {
             btn.addEventListener('click', function() {
                 document.querySelectorAll('.filter-btn-landing').forEach(b => b.classList.remove('active'));
                 this.classList.add('active');
-                // Aquí iría la lógica de filtrado si se necesita
                 renderProductsLanding();
             });
         });
