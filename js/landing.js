@@ -153,7 +153,9 @@ function orderWA(productName, price) {
     // Track conversion to Google Ads
     try {
         gtag('event', 'conversion', {
-            'send_to': 'AW-17698830352/lA9PCODAu4wbEMiPm5B',
+            'send_to': 'AW-17971833009/vV8ZCOKaw_0bELHR0blC',
+            'value': 1.0,
+            'currency': 'COP',
             'event_callback': function () {
                 window.open(url, '_blank');
             }
