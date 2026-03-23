@@ -145,7 +145,7 @@ function contactWA() {
     // Track conversion - Mensaje WhatsApp
     try {
         gtag('event', 'conversion', {
-            'send_to': 'AW-17976527804/eNHaCKmS7v4bELyX8PtC',
+            'send_to': 'AW-17971833009/vV8ZCOKaw_0bELHR0flC',
             'value': 1.0,
             'currency': 'COP',
             'event_callback': function () {
@@ -165,7 +165,7 @@ function orderWA(productName, price) {
     // Track conversion to Google Ads
     try {
         gtag('event', 'conversion', {
-            'send_to': 'AW-17976527804/eNHaCKmS7v4bELyX8PtC',
+            'send_to': 'AW-17971833009/vV8ZCOKaw_0bELHR0flC',
             'value': 1.0,
             'currency': 'COP',
             'event_callback': function () {
