@@ -141,7 +141,7 @@ function renderProducts(filters = [], limit = null) {
 
 // --- FUNCIONES DE WHATSAPP ---
 function contactWA() {
-    const url = 'https://wa.me/50761129013?text=Hola,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20flores.%20%C2%BFPodr%C3%ADan%20ayudarme%3F';
+    const url = 'https://wa.me/50763667294?text=Hola,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20flores.%20%C2%BFPodr%C3%ADan%20ayudarme%3F';
     // Track conversion - Mensaje WhatsApp
     try {
         gtag('event', 'conversion', {
@@ -160,7 +160,7 @@ function contactWA() {
 function orderWA(productName, price) {
     const message = `Hola, me interesa ${productName} (${formatUSD(price)}). ¿Podrías darme más información?`;
     const encodedMessage = encodeURIComponent(message);
-    const url = `https://wa.me/50761129013?text=${encodedMessage}`;
+    const url = `https://wa.me/50763667294?text=${encodedMessage}`;
     
     // Track conversion to Google Ads
     try {
