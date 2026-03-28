@@ -410,7 +410,7 @@
 <script>
 (function() {
     // Default language is English
-    var currentLang = 'en';
+    var currentLang = 'es';
 
     function setLanguage(lang) {
         currentLang = lang;
@@ -464,13 +464,13 @@
     document.addEventListener('DOMContentLoaded', function() {
         var saved = null;
         try { saved = sessionStorage.getItem('sophiaLang'); } catch(e) {}
-        setLanguage(saved || 'en');
+        setLanguage(saved || 'es');
     });
 
     // Also run immediately for content already in DOM
     var saved = null;
     try { saved = sessionStorage.getItem('sophiaLang'); } catch(e) {}
-    setLanguage(saved || 'en');
+    setLanguage(saved || 'es');
 })();
 </script>
 </body>
